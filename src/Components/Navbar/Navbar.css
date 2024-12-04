@@ -1,0 +1,87 @@
+.login-button {
+    background-color: #B56A50;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius:  50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.navbar {
+    background-color: whitesmoke;
+    opacity: 0.79;
+    margin: 20px;
+    height: 80px;
+    border-radius: 16px;
+}
+
+.navbar-brand {
+    border: none !important;
+    outline: none !important;
+}
+
+  .weblogo{
+    height: 3rem;
+    width: 9rem;
+    /* background-image: url("ESB.png"); */
+    background-size: cover;
+    border: none !important;
+    outline: none !important;
+  }
+  
+  .weblogo>img{
+    height: 3rem;
+    width: 9rem;
+  }
+
+.login-button:hover {
+    background-color: #B56A50;
+}
+
+.navbar-toggler{
+    font-size: 1.25rem;
+    border: none !important;}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-weight: 1000;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active{
+ color: #000;
+}
+
+
+@media (min-width: 991px) {
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #B56A50;
+        visibility: hidden;
+        transition: 0.333s ease-in-out;
+    }
+.weblogo{
+    padding-left: 1rem;
+}
+.nav-link:hover::before, .nav-link:active::before {
+    width: 100%;
+    visibility: visible;
+}
+
+}
